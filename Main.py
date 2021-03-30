@@ -3,6 +3,7 @@ from epicstore_api import *
 import urllib.request
 from discord.ext import commands
 import random
+import SecretCode
 client = commands.Bot(command_prefix='.')
 
 
@@ -76,4 +77,4 @@ def grab_image(file_path, file_name):
                 urllib.request.urlretrieve(_["keyImages"][1]["url"], path)
 
 
-client.run("PlaceKeyHere")
+client.run(SecretCode.code)
